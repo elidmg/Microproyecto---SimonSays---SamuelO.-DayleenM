@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--Inicialización de html-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says - SamuelO. DayleenM</title>  <!--Titulo para la pestaña-->
+    <link rel="stylesheet" href="styles.css"/> <!--Conexion con el archivo css-->
+</head>
+
+<body>
+    <div id="menu"> 
+        
+        <h1>🎮 Simon Dice: ¡A Jugar!</h1>
+        <input type="text" id="userplayerName" placeholder="Ingresa tu nombre">
+        <button id="startButton">Iniciar Juego</button>
+        <div id="highScores">
+            <h2>Puntiaciones Maximas</h2>
+            <ul id="highScoresList"></ul>
+        </div>
+    </div>
+    
+    <div id="game" class="hidden"> 
+        <h3> 🎮 Simon Dice: ¡Sigue la secuencia!</h3>
+        <div class="buttonContainer">
+            <div class="button red" data-color="red"></div>
+            <div class="button green" data-color="green"></div>
+            <div class="button blue" data-color="blue"></div>
+            <div class="button yellow" data-color="yellow"></div>
+        </div>
+        <div id="score">Puntaje: 0</div>
+        <button id="resetButton">Reiniciar</button>
+        </div id="round"> </div>
+    </div>
+    <script src="scripts.js" type="text/javascript"defer></script>
+</body>
+
+</html>
